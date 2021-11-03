@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageviewid"
+        android:layout_width="220sp"
+        android:layout_height="220sp"
+        android:background="@drawable/logo"
+        android:layout_gravity="right"
+        android:layout_marginBottom="200dp"
+        android:layout_marginRight="50dp"
+        ></ImageView>
+    <Button
+        android:id="@+id/logInbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="log in"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginBottom="5dp"
+        ></Button>
+    <Button
+        android:id="@+id/Signupbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="50dp"
+        ></Button>
+
+
+</LinearLayout>

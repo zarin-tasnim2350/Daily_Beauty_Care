@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="2"
+    android:background="@drawable/two"
+    tools:context=".SignUp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to DailyBeautyCare !"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textAllCaps="true"
+        android:layout_weight="0.20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_weight="1.25"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+
+        >
+        <EditText
+            android:drawablePadding="12dp"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignupEmail"
+            android:textColor="#f5f8f8"
+            android:hint="Email"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            ></EditText>
+        <EditText
+            android:padding="15dp"
+            android:background="@drawable/custom_input"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Signuppasswordid"
+            android:textColor="#f5f8f8"
+            android:hint="Password"
+            android:drawablePadding="12dp"
+
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            ></EditText>
+        <EditText
+            android:padding="15dp"
+            android:background="@drawable/custom_input"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmpasswordid"
+            android:textColor="#f5f8f8"
+            android:hint=" Confirm Password"
+            android:drawablePadding="12dp"
+
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            ></EditText>
+        <Button
+            android:id="@+id/Signupbutton"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#85e2ff"
+
+
+
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+
+
+
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/Loginbtn"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="#85e2ff"
+
+
+
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
